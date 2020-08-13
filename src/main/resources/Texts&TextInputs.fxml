@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+            <Text strikethrough="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Strikethrough"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Underline" underline="true"/>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Disabled"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Hyperlink text="Hyperlink"/>
+            <Hyperlink text="Visited" visited="true"/>
+            <Hyperlink text="Underline" underline="true"/>
+            <Hyperlink disable="true" text="Disabled"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label text="Label"/>
+            <Label text="Underline" underline="true"/>
+            <Label disable="true" text="Disabled"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextField prefWidth="150.0" text="TextField"/>
+            <TextField prefWidth="150.0" promptText="Prompt Text"/>
+            <TextField editable="false" prefWidth="150.0" text="Uneditable"/>
+            <TextField disable="true" prefWidth="150.0" text="Disabled"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <PasswordField prefWidth="150.0" promptText="PasswordField"/>
+            <PasswordField prefWidth="150.0" text="password"/>
+            <PasswordField editable="false" prefWidth="150.0" text="password"/>
+            <PasswordField disable="true" prefWidth="150.0" text="password"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TextArea prefHeight="150.0" prefWidth="150.0" text="TextArea"/>
+            <TextArea prefHeight="150.0" prefWidth="150.0" promptText="Prompt Text"/>
+            <TextArea editable="false" prefHeight="150.0" prefWidth="150.0" text="Uneditable"/>
+            <TextArea disable="true" prefHeight="150.0" prefWidth="150.0" text="Disabled"/>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label text="Tooltip">
+               <tooltip>
+                  <Tooltip text="Tooltip"/>
+               </tooltip>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+   </padding>
+</VBox>

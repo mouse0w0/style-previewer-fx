@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+    <children>
+        <HBox spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ProgressBar:"/>
+                <ProgressBar prefWidth="200.0" progress="0.5"/>
+                <ProgressBar prefWidth="200.0"/>
+                <ProgressBar disable="true" prefWidth="200.0" progress="0.5"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ProgressIndicator:"/>
+                <ProgressIndicator progress="0.5"/>
+                <ProgressIndicator progress="0.01"/>
+                <ProgressIndicator progress="1.0"/>
+                <ProgressIndicator disable="true" progress="0.0"/>
+                <ProgressIndicator/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Slider:"/>
+                <Slider value="50.0"/>
+                <Slider showTickLabels="true" showTickMarks="true" value="50.0"/>
+                <Slider disable="true" value="50.0"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ScrollBar:"/>
+                <ScrollBar prefWidth="200.0" value="50.0"/>
+                <ScrollBar disable="true" prefWidth="200.0" value="50.0"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Separator:"/>
+                <Separator prefWidth="200.0"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

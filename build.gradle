@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mouse0w0.github'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+}
