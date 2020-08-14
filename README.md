@@ -1,2 +1,2 @@
-# jfx-style-viewer
-Style viewer for JavaFX
+# jfx-style-previewer
+Style previewer for JavaFX

@@ -1,4 +1,4 @@
-package com.github.moues0w0.jfxstyleviewer;
+package com.github.moues0w0.stylepreviewer;
 
 import javafx.fxml.FXMLLoader;
 

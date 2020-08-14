@@ -1,4 +1,4 @@
-package com.github.moues0w0.jfxstyleviewer;
+package com.github.moues0w0.stylepreviewer;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -13,7 +13,7 @@ import java.io.File;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class StyleViewerApp extends Application {
+public class StylePreviewerApp extends Application {
 
     private FileWatcher fileWatcher;
 

@@ -1,11 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.mouse0w0.github'
-version '1.0-SNAPSHOT'
+version '1.0.0'
 
 sourceCompatibility = targetCompatibility = 1.8
+
+mainClassName = 'com.mouse0w0.github.stylepreviewer.StylePreviewerApp'
 
 repositories {
     jcenter()
