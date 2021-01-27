@@ -64,13 +64,21 @@ public class StylePreviewerApp extends Application {
                 }
             }
         });
-        list.setOnDragOver(event -> {
+
+        root.getTabs().addAll(
+                new Tab("Texts&TextInputs", FXUtils.loadFXML(null, null, "Texts&TextInputs.fxml")),
+                new Tab("Buttons&ChoiceBoxes", FXUtils.loadFXML(null, null, "Buttons&ChoiceBoxes.fxml")),
+                new Tab("ProgressBars&Slider", FXUtils.loadFXML(null, null, "ProgressBars&Slider.fxml")),
+                new Tab("Menus&Layouts", FXUtils.loadFXML(null, null, "Menus&Layouts.fxml")));
+
+        Scene scene = new Scene(root);
+        scene.setOnDragOver(event -> {
             event.consume();
             if (event.getDragboard().hasFiles()) {
                 event.acceptTransferModes(TransferMode.LINK);
             }
         });
-        list.setOnDragDropped(event -> {
+        scene.setOnDragDropped(event -> {
             event.consume();
 
             List<File> files = event.getDragboard().getFiles();
@@ -82,13 +90,7 @@ public class StylePreviewerApp extends Application {
             }
         });
 
-        root.getTabs().addAll(
-                new Tab("Texts&TextInputs", FXUtils.loadFXML(null, null, "Texts&TextInputs.fxml")),
-                new Tab("Buttons&ChoiceBoxes", FXUtils.loadFXML(null, null, "Buttons&ChoiceBoxes.fxml")),
-                new Tab("ProgressBars&Slider", FXUtils.loadFXML(null, null, "ProgressBars&Slider.fxml")),
-                new Tab("Menus&Layouts", FXUtils.loadFXML(null, null, "Menus&Layouts.fxml")));
-
-        primaryStage.setScene(new Scene(root));
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
