@@ -1,95 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.collections.FXCollections?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import java.lang.*?>
 <VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-   <padding>
-      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
-   </padding>
-   <children>
-      <HBox spacing="10.0">
-         <children>
-            <Button mnemonicParsing="false" text="Button"/>
-            <Button defaultButton="true" mnemonicParsing="false" text="Default"/>
-            <Button cancelButton="true" mnemonicParsing="false" text="Cancel"/>
-            <Button disable="true" mnemonicParsing="false" text="Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <ToggleButton mnemonicParsing="false" text="ToggleButton"/>
-            <ToggleButton mnemonicParsing="false" selected="true" text="Selected"/>
-            <ToggleButton disable="true" mnemonicParsing="false" text="Disabled"/>
-            <ToggleButton disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <RadioButton mnemonicParsing="false" text="RadioButton"/>
-            <RadioButton mnemonicParsing="false" selected="true" text="Selected"/>
-            <RadioButton disable="true" mnemonicParsing="false" text="Disabled"/>
-            <RadioButton disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <CheckBox mnemonicParsing="false" text="CheckBox"/>
-            <CheckBox mnemonicParsing="false" selected="true" text="Selected"/>
-            <CheckBox allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" text="Indeterminated"/>
-            <CheckBox disable="true" mnemonicParsing="false" text="Disabled"/>
-            <CheckBox disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
-            <CheckBox allowIndeterminate="true" disable="true" indeterminate="true" mnemonicParsing="false"
-                      text="Indeterminated Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <ChoiceBox prefWidth="150.0"/>
-            <ChoiceBox disable="true" prefWidth="150.0"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <ComboBox prefWidth="150.0" promptText="ComboBox"/>
-            <ComboBox editable="true" prefWidth="150.0" promptText="Editable"/>
-            <ComboBox disable="true" prefWidth="150.0" promptText="Disabled"/>
-            <ComboBox disable="true" editable="true" prefWidth="150.0" promptText="Editable Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <ColorPicker/>
-            <ColorPicker disable="true"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <DatePicker editable="false" prefWidth="150.0" promptText="DatePicker"/>
-            <DatePicker prefWidth="150.0" promptText="Editable"/>
-            <DatePicker disable="true" editable="false" prefWidth="150.0" promptText="Disabled"/>
-            <DatePicker disable="true" prefWidth="150.0" promptText="Editable Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <Spinner prefWidth="150.0"/>
-            <Spinner editable="true" prefWidth="150.0"/>
-            <Spinner disable="true" prefWidth="150.0"/>
-            <Spinner disable="true" editable="true" prefWidth="150.0"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <MenuButton mnemonicParsing="false" text="MenuButton"/>
-            <MenuButton disable="true" mnemonicParsing="false" text="Disabled"/>
-         </children>
-      </HBox>
-      <HBox spacing="10.0">
-         <children>
-            <SplitMenuButton mnemonicParsing="false" text="SplitMenuButton"/>
-            <SplitMenuButton disable="true" mnemonicParsing="false" text="Disabled"/>
-         </children>
-      </HBox>
-   </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+    <children>
+        <HBox spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" text="Button"/>
+                <Button defaultButton="true" mnemonicParsing="false" text="Default"/>
+                <Button cancelButton="true" mnemonicParsing="false" text="Cancel"/>
+                <Button disable="true" mnemonicParsing="false" text="Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <ToggleButton mnemonicParsing="false" text="ToggleButton"/>
+                <ToggleButton mnemonicParsing="false" selected="true" text="Selected"/>
+                <ToggleButton disable="true" mnemonicParsing="false" text="Disabled"/>
+                <ToggleButton disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <RadioButton mnemonicParsing="false" text="RadioButton"/>
+                <RadioButton mnemonicParsing="false" selected="true" text="Selected"/>
+                <RadioButton disable="true" mnemonicParsing="false" text="Disabled"/>
+                <RadioButton disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <CheckBox mnemonicParsing="false" text="CheckBox"/>
+                <CheckBox mnemonicParsing="false" selected="true" text="Selected"/>
+                <CheckBox allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" text="Indeterminated"/>
+                <CheckBox disable="true" mnemonicParsing="false" text="Disabled"/>
+                <CheckBox disable="true" mnemonicParsing="false" selected="true" text="Selected Disabled"/>
+                <CheckBox allowIndeterminate="true" disable="true" indeterminate="true" mnemonicParsing="false"
+                          text="Indeterminated Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <ChoiceBox prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Item1"/>
+                            <String fx:value="Item2"/>
+                            <String fx:value="Item3"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox disable="true" prefWidth="150.0"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <ComboBox prefWidth="150.0" promptText="ComboBox">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Item1"/>
+                            <String fx:value="Item2"/>
+                            <String fx:value="Item3"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <ComboBox editable="true" prefWidth="150.0" promptText="Editable">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Item1"/>
+                            <String fx:value="Item2"/>
+                            <String fx:value="Item3"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <ComboBox disable="true" prefWidth="150.0" promptText="Disabled"/>
+                <ComboBox disable="true" editable="true" prefWidth="150.0" promptText="Editable Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <ColorPicker/>
+                <ColorPicker disable="true"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <DatePicker editable="false" prefWidth="150.0" promptText="DatePicker"/>
+                <DatePicker prefWidth="150.0" promptText="Editable"/>
+                <DatePicker disable="true" editable="false" prefWidth="150.0" promptText="Disabled"/>
+                <DatePicker disable="true" prefWidth="150.0" promptText="Editable Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <Spinner prefWidth="150.0"/>
+                <Spinner editable="true" prefWidth="150.0"/>
+                <Spinner disable="true" prefWidth="150.0"/>
+                <Spinner disable="true" editable="true" prefWidth="150.0"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <MenuButton mnemonicParsing="false" text="MenuButton"/>
+                <MenuButton disable="true" mnemonicParsing="false" text="Disabled"/>
+            </children>
+        </HBox>
+        <HBox spacing="10.0">
+            <children>
+                <SplitMenuButton mnemonicParsing="false" text="SplitMenuButton"/>
+                <SplitMenuButton disable="true" mnemonicParsing="false" text="Disabled"/>
+            </children>
+        </HBox>
+    </children>
 </VBox>

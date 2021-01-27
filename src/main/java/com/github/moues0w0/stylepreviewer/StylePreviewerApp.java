@@ -86,7 +86,7 @@ public class StylePreviewerApp extends Application {
                 new Tab("Texts&TextInputs", FXUtils.loadFXML(null, null, "Texts&TextInputs.fxml")),
                 new Tab("Buttons&ChoiceBoxes", FXUtils.loadFXML(null, null, "Buttons&ChoiceBoxes.fxml")),
                 new Tab("ProgressBars&Slider", FXUtils.loadFXML(null, null, "ProgressBars&Slider.fxml")),
-                new Tab("Menus&Layouts", new MenusAndLayouts()));
+                new Tab("Menus&Layouts", FXUtils.loadFXML(null, null, "Menus&Layouts.fxml")));
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
