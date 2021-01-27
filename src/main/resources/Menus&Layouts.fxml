@@ -76,13 +76,8 @@
     <bottom>
         <ButtonBar BorderPane.alignment="CENTER">
             <buttons>
-                <Button mnemonicParsing="false">
-                    <graphic>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="18.0" stroke="BLACK"
-                                   strokeType="INSIDE" width="18.0"/>
-                    </graphic>
-                </Button>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ButtonBar"/>
+                <Button mnemonicParsing="false" text="Apply"/>
             </buttons>
         </ButtonBar>
     </bottom>

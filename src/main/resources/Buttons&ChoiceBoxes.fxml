@@ -86,7 +86,9 @@
         <HBox spacing="10.0">
             <children>
                 <ColorPicker/>
+                <ColorPicker editable="true"/>
                 <ColorPicker disable="true"/>
+                <ColorPicker disable="true" editable="true"/>
             </children>
         </HBox>
         <HBox spacing="10.0">

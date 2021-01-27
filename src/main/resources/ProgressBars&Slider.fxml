@@ -38,8 +38,8 @@
         <HBox spacing="10.0">
             <children>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ScrollBar:"/>
-                <ScrollBar prefWidth="200.0" value="50.0"/>
-                <ScrollBar disable="true" prefWidth="200.0" value="50.0"/>
+                <ScrollBar prefWidth="200.0" value="50.0" visibleAmount="30.0"/>
+                <ScrollBar disable="true" prefWidth="200.0" value="50.0" visibleAmount="30.0"/>
             </children>
         </HBox>
         <HBox spacing="10.0">
